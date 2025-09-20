@@ -8,19 +8,19 @@ int main(){
         cout<< v[i] << " ";
     }
     cout << endl;
-    // vector<int> :: iterator it = v.begin();
-    // // cout << (*it+1) << endl;
-    // for(it = v.begin(); it != v.end(); it++){
-    //     cout << (*it) << endl;
-    // }
+    vector<int> :: iterator it = v.begin();
+    cout << (*it+1) << endl;
+    for(it = v.begin(); it != v.end(); it++){
+        cout << (*it) << endl;
+    }
 
 
     //access pair iterator
     vector<pair<int,int>> v_pair = {{1,2},{2,3},{3,4}};
     vector<pair<int,int>> :: iterator it;
-    // for(it = v_pair.begin(); it!=v_pair.end(); it++){
-    //     cout<<(*it).first << " " << (*it).second << endl;
-    // }
+    for(it = v_pair.begin(); it!=v_pair.end(); it++){
+        cout<<(*it).first << " " << (*it).second << endl;
+    }
       
     // different syntax
      for(it = v_pair.begin(); it!=v_pair.end(); it++){
